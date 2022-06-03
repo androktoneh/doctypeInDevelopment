@@ -1,0 +1,109 @@
+@keyframes cursor {
+    from, to { 
+        border-color: #FFF
+    }
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+.fadeIn {
+    animation: fadeIn 6s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+.displayMensagem {
+    background-color: black;
+    height: 100vh;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.areaTexto {
+    color: #FFF;
+}
+
+span {
+    border-right: .05em solid #FFF;
+    animation: cursor 1s steps(1) infinite;
+}
+
+html, body, .background-gradient {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    overflow: hidden;
+}
+  
+.background-gradient{
+    color: #FFF;
+    background: linear-gradient(45deg, #170019, hsl(295, 100%, 4%), hsl(280, 100%, 6%), hsl(265, 100%, 7%));
+    background-size: 300% 300%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.starField {
+    opacity: 0;
+}
+
+.button {
+    cursor: pointer;
+    background-color: black;
+}
+
+.starField i{
+    position: absolute;
+    box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+    border-radius: 50%;
+
+    animation: brilhoEstrelas linear infinite;
+} 
+
+@keyframes brilhoEstrelas {
+    0%, 100% {
+        opacity: 0.1;
+    }
+
+    10%, 90% {
+        opacity: 0.7;
+    }
+
+    30%, 70% {
+        opacity: 1;
+    }
+}
+
+.background-gradient p {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 0 #FFF;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}

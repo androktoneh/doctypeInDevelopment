@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>DOCTYPE: In Development</title>
+</head>
+<body>
+    <audio #song>
+        <source src="space_cruise.mp3" type="audio/mpeg">
+    </audio>
+    <section class="displayMensagem">
+        <pre class="areaTexto">
+            <div class="button" onclick="play()">
+                <img src="play.png" width="100px">
+            </div>
+        </pre>
+    </section>
+    <section class="background-gradient">
+        <section class="starField"></section>
+        <p class="textFim">Tão brilhante quanto as estrelas do céu.</p>
+    </section>
+
+    <script>
+        function gerarEstrelas(){
+            const qnt = 200;
+            const section = document.querySelector('.starField');
+
+            for(var i = 0; i < qnt; i++){
+                const estrela = document.createElement('i');
+                const posX = Math.floor(Math.random() * window.innerWidth);
+                const posY = Math.floor(Math.random() * window.innerHeight);
+
+                const tamanho = Math.random() * 4;
+                const duracaoBrilho = Math.random() * 5;
+                const seletorCor = Math.random() * 6;
+                estrela.style.left = posX + 'px';
+                estrela.style.top = posY+ 'px';
+                estrela.style.height = 1 + tamanho + 'px';
+                estrela.style.width = 1 + tamanho + 'px';
+                estrela.style.animationDuration = 2 + duracaoBrilho + 's';
+
+                if(seletorCor < 2 || seletorCor >= 5)
+                    estrela.style.backgroundColor = '#FFF';
+                else if (seletorCor >= 2 && seletorCor < 3)
+                    estrela.style.backgroundColor = '#6966ff';
+                else if (seletorCor >= 3 && seletorCor < 4)
+                    estrela.style.backgroundColor = '#ff8080';
+                else if (seletorCor >= 4 && seletorCor < 5)
+                    estrela.style.backgroundColor = '#ffe694';
+                section.appendChild(estrela);
+            }
+        }
+        gerarEstrelas();
+    </script>
+</body>
+</html>
+
