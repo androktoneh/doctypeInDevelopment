@@ -5,6 +5,9 @@ O projeto não tem finalidade a não ser a exibição de uma breve mensagem moti
 
 Durante 4 dias, em Junho de 2022, os estagiários do projeto Escola foram ministrados com conteúdos de introdução ao HTML5 e CSS3. Foram apresentados os recursos básicos destas linguagens, desde os conceitos de tags, elementos e estruturas de página até folhas de estilo, organização em displays responsivos e inclusão de bibliotecas externas (em prática, foi apresentado também o Bootstrap 5).
 
+---
+![shiny](https://user-images.githubusercontent.com/82811217/171903778-40a86884-8c16-4de4-90bb-34325674791d.png)
+
 
 ### Sobre o projeto:
   No fim desse período quis realizar uma pequena "surpresa" aos estagiários, passando uma mensagenzinha de motivação usando recursos que vimos durante as aulas: HTML, CSS e um pouco de JavaScript pra complementar. A ideia era representar um espaço de céu noturno com várias pequenas estrelas, de tamanho, posição e período de brilho variáveis - um background tranquilo para contornar um texto de motivação dentro de uma estrutura html fictícia. Não fui muito longe e prezei pela simplicidade: foi um projeto executado em pouco tempo, com pouco conhecimento de JavaScript e com o propósito de ser uma pequena amostra do que é possível fazer com as ferramentas fundamentais do desenvolvimento web.
